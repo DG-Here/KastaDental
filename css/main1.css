@@ -1,0 +1,157 @@
+<section class="setvices-inner">
+                <div class="container">
+                    <div class="services">
+                        <h2 class="tittel_h2">Наши услуги</h2>
+                        <div class="services_table">
+                            <div class="services_item">
+                                <h3>Хирургическая стоматология</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                            <div class="services_item">
+                                <h3>Ортодонтическая стомотология</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                            <div class="services_item">
+                                <h3>Терапевтическая стомотология</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                            <div class="services_item">
+                                <h3>Профилактическая стоматология</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                            <div class="services_item">
+                                <h3>Эстетическая стоматология</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                            <div class="services_item">
+                                <h3>Ортопедическая стоматология</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                            <div class="services_item">
+                                <h3>Парадонтология</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                            <div class="services_item">
+                                <h3>Имплантация</h3>
+                                <div class="services_button">
+                                    <span>Записаться</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            .coco{
+  padding-top: 120px;
+}
+
+.setvices-inner{
+  margin-top: 120px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.services_table{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.services_item{
+  flex: 0 0 30%;
+  text-align: center;
+  background-color: #ffa;
+  border-radius: 5px;
+  padding: 20px 20px 23px;
+  box-shadow: 0px 4px 6px -1px rgba(105, 105, 105, 0.4);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.services_item:nth-child(-3n+11){
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services_item h3{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #1D110E;
+}
+
+.services_button{
+  display: inline-block;
+  background-color: #08818C;
+  border-radius: 5px;
+  margin-top: 120px;
+}
+
+.services_button span{
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFF;
+  padding: 6px 30px;
+}
+
+
+@media (max-width: 767px){
+
+  .services_item{
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 992px){
+
+  .services_item{
+    flex: none;
+    width: 100%
+  }
+
+
+}
+
+/*
+@media (max-width: 767px){
+  .services_item:nth-child(-3n+11){
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .services_item{
+    width: 100%
+  }
+}
+
+@media (max-width: 992px){
+    .services_item{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+}
+
+
