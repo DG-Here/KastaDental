@@ -697,8 +697,9 @@ h1{
 
 .services_table{
   display: flex;
-  width: 100%;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .services_item-inner{
@@ -723,19 +724,69 @@ h1{
 }
 
 .services_item h3{
+  display: block;
   font-weight: 400;
+  height: 65px;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   color: #1D110E;
+  margin-bottom: 40px;
 }
 
 .services_button{
   display: inline-block;
+  position: relative;
   background-color: #08818C;
   border-radius: 5px;
   margin-top: 120px;
 }
+
+.services_button:before{
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_svg_1:before{
+  background-image: url(../img/services_icon/item1.svg);
+}
+
+.card_svg_2:before{
+  background-image: url(../img/services_icon/item2.svg);
+}
+
+.card_svg_3:before{
+  background-image: url(../img/services_icon/item3.svg);
+}
+
+.card_svg_4:before{
+  background-image: url(../img/services_icon/item4.svg);
+}
+
+.card_svg_5:before{
+  background-image: url(../img/services_icon/item5.svg);
+}
+
+.card_svg_6:before{
+  background-image: url(../img/services_icon/item6.svg);
+}
+
+.card_svg_7:before{
+  background-image: url(../img/services_icon/item7.svg);
+}
+
+.card_svg_8:before{
+  background-image: url(../img/services_icon/item8.svg);
+}
+
 
 .services_button span{
   display: block;
@@ -757,6 +808,7 @@ h1{
     flex: none;
     width: 100%;
   }
+
 }
 
 @media (max-width: 992px){
@@ -765,28 +817,15 @@ h1{
     flex: 0 0 50%;
   }
 
-
 }
 
-/*
-@media (max-width: 767px){
-  .services_item:nth-child(-3n+11){
-    margin-left: 0;
-    margin-right: 0;
-  }
 
-  .services_item{
-    width: 100%
-  }
+/*---------------------------------------*/
+/*---------------ОТЗЫВЫ------------------*/
+
+.reviews{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 120px;
 }
-
-@media (max-width: 992px){
-    .services_item{
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-
-}
-
 
