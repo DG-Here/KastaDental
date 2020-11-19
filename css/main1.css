@@ -1,54 +1,70 @@
-<section class="setvices-inner">
+            <section class="setvices-inner">
                 <div class="container">
                     <div class="services">
                         <h2 class="tittel_h2">Наши услуги</h2>
                         <div class="services_table">
-                            <div class="services_item">
-                                <h3>Хирургическая стоматология</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Хирургическая стоматология</h3>
+                                    <div class="services_button card_svg_1">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="services_item">
-                                <h3>Ортодонтическая стомотология</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Ортодонтическая стомотология</h3>
+                                    <div class="services_button card_svg_2">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="services_item">
-                                <h3>Терапевтическая стомотология</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Терапевтическая стомотология</h3>
+                                    <div class="services_button card_svg_3">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="services_item">
-                                <h3>Профилактическая стоматология</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Профилактическая стоматология</h3>
+                                    <div class="services_button card_svg_4">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="services_item">
-                                <h3>Эстетическая стоматология</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Эстетическая стоматология</h3>
+                                    <div class="services_button card_svg_5">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="services_item">
-                                <h3>Ортопедическая стоматология</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Ортопедическая стоматология</h3>
+                                    <div class="services_button card_svg_6">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="services_item">
-                                <h3>Парадонтология</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Парадонтология</h3>
+                                    <div class="services_button card_svg_7">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="services_item">
-                                <h3>Имплантация</h3>
-                                <div class="services_button">
-                                    <span>Записаться</span>
+                            <div class="services_item-inner">
+                                <div class="services_item">
+                                    <h3>Имплантация</h3>
+                                    <div class="services_button card_svg_8">
+                                        <span>Записаться</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,8 +72,6 @@
                     </div>
                 </div>
             </section>
-
-
 
             .coco{
   padding-top: 120px;
@@ -71,19 +85,25 @@
 
 .services_table{
   display: flex;
-  width: 100%;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.services_item-inner{
+  flex: 0 0 33.33%;
+  text-align: center;
+  padding: 0px 15px;
 }
 
 .services_item{
-  flex: 0 0 30%;
-  text-align: center;
-  background-color: #ffa;
+  display: block;
   border-radius: 5px;
-  padding: 20px 20px 23px;
   box-shadow: 0px 4px 6px -1px rgba(105, 105, 105, 0.4);
   margin-top: 30px;
   margin-bottom: 30px;
+  padding: 20px 10px 23px;
+  background-color: #fff;
 }
 
 .services_item:nth-child(-3n+11){
@@ -92,19 +112,69 @@
 }
 
 .services_item h3{
+  display: block;
   font-weight: 400;
+  height: 65px;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   color: #1D110E;
+  margin-bottom: 40px;
 }
 
 .services_button{
   display: inline-block;
+  position: relative;
   background-color: #08818C;
   border-radius: 5px;
   margin-top: 120px;
 }
+
+.services_button:before{
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_svg_1:before{
+  background-image: url(../img/services_icon/item1.svg);
+}
+
+.card_svg_2:before{
+  background-image: url(../img/services_icon/item2.svg);
+}
+
+.card_svg_3:before{
+  background-image: url(../img/services_icon/item3.svg);
+}
+
+.card_svg_4:before{
+  background-image: url(../img/services_icon/item4.svg);
+}
+
+.card_svg_5:before{
+  background-image: url(../img/services_icon/item5.svg);
+}
+
+.card_svg_6:before{
+  background-image: url(../img/services_icon/item6.svg);
+}
+
+.card_svg_7:before{
+  background-image: url(../img/services_icon/item7.svg);
+}
+
+.card_svg_8:before{
+  background-image: url(../img/services_icon/item8.svg);
+}
+
 
 .services_button span{
   display: block;
@@ -118,40 +188,21 @@
 
 @media (max-width: 767px){
 
-  .services_item{
-    flex: 0 0 100%;
+  .services_table{
+    display: block;
   }
-}
 
-@media (max-width: 992px){
-
-  .services_item{
+  .services_item-inner{
     flex: none;
-    width: 100%
+    width: 100%;
   }
 
-
-}
-
-/*
-@media (max-width: 767px){
-  .services_item:nth-child(-3n+11){
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .services_item{
-    width: 100%
-  }
 }
 
 @media (max-width: 992px){
-    .services_item{
-    margin-left: 0;
-    margin-right: 0;
+
+  .services_item-inner{
+    flex: 0 0 50%;
   }
 
-
 }
-
-
