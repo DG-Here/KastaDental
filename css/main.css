@@ -454,7 +454,11 @@ p{
       min-width: none;
       width: 100%;
     }
-
+  
+    .reception_button{
+      position: static;
+    }
+  
     .reception_girl:before{
       display: none;
     }
