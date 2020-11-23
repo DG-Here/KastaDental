@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kasta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasta</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/price.css">
+    <link rel="stylesheet" type="text/css" href="css/contact_section.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+
 </head>
 <body>
-	<div class="wrapper">
-		            <header class="header">
+    <div class="wrapper">
+                    <header class="header">
                 <div class="container">
                     <div class="header_body">
                         <div class="social__net">
@@ -84,70 +87,67 @@
                 </div>
             </section>
 
-            <section class="price-inner">
-            	<div class="container">
-            		<div class="price_cont">
-            			<h2>Лечение зубов</h2>
-            			<div class="price_cont_items-inner">
 
-            				<div class="price_cont_item">
-            					<div class="service">
-            						<span>Лечение поверхностного и среднего кариеса</span>
-            					</div>
-            					<div class="service_cost">
-            						<span>250 руб.</span>
-            					</div>
-	            			</div>
+            <section class="contact_section-inner">
+                <div class="container">
+                    <div class="contact_section">
 
-	            			<div class="price_cont_item">
-            					<div class="service">
-            						<span>Лечение глубокого кариеса</span>
-            					</div>
-            					<div class="service_cost">
-            						<span>390 руб.</span>
-            					</div>
-	            			</div>
+                        <div class="cotact_list">
+                            <h2>Контакты</h2>
+                            <div class="contact_list_grid">
 
-	            			<div class="price_cont_item">
-            					<div class="service">
-            						<span>Лечение пульпита однокорневого зуба</span>
-            					</div>
-            					<div class="service_cost">
-            						<span>450 руб.</span>
-            					</div>
-	            			</div>
+                                <div class="contact_grid map_position">
+                                    <div class="cont_gr_item">
+                                        <ul class="target1 map_position_active" data-lat='47.211225' data-lng='38.924219'>
+                                            <li class="loc">А.Глушко, 32 </li>
+                                            <li class="tel">8 863 461 42 57</li>
+                                            <li>8 900 127 59 99</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cont_gr_item">
+                                        <ul class="target2" data-lat='47.230223' data-lng='38.894078'>
+                                            <li class="loc">Октябрьская 145</li>
+                                            <li class="tel">8 863 461 42 57</li>
+                                            <li>8 900 127 59 99</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class="contact_grid">
+                                    <div class="cont_gr_item">
+                                        <ul>
+                                            <li class="time">Пн-Сб  9.00 - 17.00</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cont_gr_item">
+                                        <ul>
+                                            <li class="mail">info@kasta.com</li>
+                                        </ul>
+                                    </div>       
+                                </div>
+                            </div>
+                        </div>
 
-	            			<div class="price_cont_item">
-            					<div class="service">
-            						<span>Лечение пульпита двукорневого зуба</span>
-            					</div>
-            					<div class="service_cost">
-            						<span>550 руб.</span>
-            					</div>
-	            			</div>
 
-	            			<div class="price_cont_item">
-            					<div class="service">
-            						<span>Лечение пульпита трехкорневого зуба</span>
-            					</div>
-            					<div class="service_cost">
-            						<span>650 руб.</span>
-            					</div>
-	            			</div>
+                        <div id="map"></div>
 
-	            			<div class="price_cont_item">
-            					<div class="service">
-            						<span>Лечение периодонтита одно-корневого зуба в одно посещение</span>
-            					</div>
-            					<div class="service_cost">
-            						<span>500 руб.</span>
-            					</div>
-	            			</div>
+                        <div class="feedback_block">
+                            <h2>Обратная связь</h2>
+                            <p>Чтобы написать нам или записаться на прием воспользуйтесь формой</p>
+                            <form class="feedback_form" action="№">
+                                <input class="feedback_form_input" type="text" name="" placeholder="Имя">
+                                <input class="feedback_form_input" type="text" name="" placeholder="Электронный адрес">
+                                <input class="feedback_form_input" type="text" name="" placeholder="Номер телефона">
+                                <textarea class="feedback_form_textaria" placeholder="Сообщение"></textarea>
+                            </form>
 
-            			</div>
-            		</div>
-            	</div>
+                        </div>
+
+
+                    </div>
+                </div>
             </section>
+
 
 
             <footer>
@@ -214,11 +214,16 @@
             </footer>
 
 
-	</div>
+    </div>
 
+    
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d55081f5-fb67-4ddc-8ea7-5d919f36e9d7" type="text/javascript"></script>
+    <script src="doc/mapbasics.js" type="text/javascript"></script>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="doc/script.js"></script>
+
+
 
 
 </body>
